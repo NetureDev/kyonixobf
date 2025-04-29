@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="en-US"><head>
+    <title>LuaObfuscator - Community</title>
+    <style>
+        html {
+            /* Only here so we don't get a bright white flash while page loads! */
+            background-color: #1e1e1e;
+            color: lightblue;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/code-lua.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Lua Obfuscator. Beautify/Minify/Obfuscate all the lua dialects, including LuaU, gLua, Pluto and vanilla Lua 5.1 (and above).">
+    <meta name="keywords" content="Lua Obfuscator, Online Lua Obfuscation, Lua Beautifier, Lua Minifier, Lua deobfuscator, obfuscator, lua, deobfuscation, roblox obfuscator, roblox protection, packer, crypter, lua emulator, FiveM Obfuscator, LuaU beautifier, Luraph beautifier, Pluto Beautifier, LuaU minifier, OSRS Plugins, Roblox whitelist">
+    <meta property="og:title" content="Online Lua Obfuscator">
+    <meta property="og:image" content="../img/logo.png">
+    <meta property="og:description" content="Online Lua Obfuscator. Beautify/Minify/Obfuscate all the lua dialects, including LuaU, gLua, Pluto and vanilla Lua 5.1 (and above).">
+    <meta property="og:url" content="https://luaobfuscator.com">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="../../fonts.googleapis.com/css2/family%3DOrbitron%26family%3DVT323%26display%3Dswap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container" style="height: 100% !important">
+        
+
+<div class="notepad-body">
+
+    <div class="notepad-test-2">
+        
+<!-- FORUM NAVBAR START -->
+<div class="notepad-top" style="display: flex; height: 38px; width: 100%; background-color: #1E1E1E">
+    <ul style="display: flex; flex-wrap: nowrap; flex-direction: row; width: 100%; height: 100%; margin: 0; padding: 0;">
+        <li class="top-crumb"><a style="text-decoration: none;" href="/">Home</a></li>
+        <li class="top-crumb"><a style="text-decoration: none;" href="/forum">Forum</a></li>
+    </ul>
+    <div style="display: flex; margin-right: 12px; height: 100%;line-height: 38px; background: var(--color-background-light);">
+        <form method="POST" action="/forum/OAuth2/Discord">
+            <input style="cursor: pointer; height: 30px;" class="pink-btn-light" type="submit" value="Login">
+        </form>
+    </div>
+</div>
+<!-- FORUM NAVBAR END -->
+        <div class="notepad-script" style="flex-direction: column;">
+            <div class="micro-forum" style="width: auto;">
+                
+<!-- WAIFU BOX START -->
+<div id="waifu-box" class="content-box content-box-interactable" style="min-height: 10px;">
+    <div class="content-box-middle" style="color:var(--white); display: block; height: auto; max-height: 100%;"> 
+        <div class="flare-box" style="width: 100%;max-height: 360px;display: block;">       
+            <img alt="anime waifu banner" src="../img/banners/osrs_1.png">
+            <div style="
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    padding: 5%;
+                    box-sizing: border-box;
+                    text-shadow: 2px 2px 2px BLACK;
+                ">
+                <h1 style="color: var(--primary)">OSRS Plugins soonTM</h1>
+            </div>
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small"><a style="color: var(--secondary);" href="/forum/scripts/">My Scripts</a></h3>
+        <h3 class="title-small"><a style="color: var(--secondary);" href="/forum/keys/">API Keys</a></h3>
+        <h3 class="title-small"><a style="color: var(--secondary);" href="/forum/docs/">Docs</a></h3>
+        
+
+    </div>
+</div>
+<!-- WAIFU BOX END-->
+
+                <!-- SUMMARY START -->
+                
+
+
+<div class="content-box-mini  content-box-interactable2" style="font-family:gotham!important; min-height: 80px!important;height:80px!important; border-bottom: 2px dashed #1e1e1e; margin: 0; ">
+    <div class="content-box-left" style="min-width: 70px;width: 70px; text-align: center; position: relative; margin: 0;">
+        <a href="/forum/user/7" class="box-user" data-id="1">
+            <div class="box-avatar" style="
+    border-radius: 0!important;
+    background-size: 50px;
+    background-color: transparent;
+    background-image: url(../avatars/792875215243575306/d65f9f38a43a4afefcd4566db61e57c7.webp), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==)
+">
+            </div>
+        </a>
+    </div>
+    <div class="content-box-middle" style="color:var(--white);">
+        <a style="text-decoration: none;" href="/forum/announcements">
+            <h2 class="post-title post-title-interactable" style="margin-top: 8px;padding-left: 4px;font-size:18px!important;font-family:gotham">Announcements</h2>
+        </a>
+        <span style="margin-right: 12px;">New forum '/raw' feature!</span>
+            <span class="reply-note tooltip-date">Last Reply 2 Months</span>
+        <div class="flare-box" style="padding: 0 0 5px 0;">
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small title-small-2" style="margin: 0;">13 Threads</h3>
+        <h3 class="title-small title-small-2" style="margin: 0;">148 Replies</h3>
+    </div>
+</div>
+
+
+                <div class="content-box-header content-box-interactable2">
+                    <h3>Socialising</h3>
+                </div>
+
+                
+
+
+<div class="content-box-mini  content-box-interactable2" style="font-family:gotham!important; min-height: 80px!important;height:80px!important; border-bottom: 2px dashed #1e1e1e; margin: 0; ">
+    <div class="content-box-left" style="min-width: 70px;width: 70px; text-align: center; position: relative; margin: 0;">
+        <a href="/forum/user/7" class="box-user" data-id="1">
+            <div class="box-avatar" style="
+    border-radius: 0!important;
+    background-size: 50px;
+    background-color: transparent;
+    background-image: url(https://cdn.discordapp.com/avatars/1167716918103375962/.webp), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==)
+">
+            </div>
+        </a>
+    </div>
+    <div class="content-box-middle" style="color:var(--white);">
+        <a style="text-decoration: none;" href="/forum/support">
+            <h2 class="post-title post-title-interactable" style="margin-top: 8px;padding-left: 4px;font-size:18px!important;font-family:gotham">Questions, Help &amp; Support</h2>
+        </a>
+        <span style="margin-right: 12px;">wbmx hub</span>
+            <span class="reply-note tooltip-date">Last Reply 14 Days</span>
+        <div class="flare-box" style="padding: 0 0 5px 0;">
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small title-small-2" style="margin: 0;">26 Threads</h3>
+        <h3 class="title-small title-small-2" style="margin: 0;">56 Replies</h3>
+    </div>
+</div>
+
+                
+
+
+<div class="content-box-mini  content-box-interactable2" style="font-family:gotham!important; min-height: 80px!important;height:80px!important; border-bottom: 2px dashed #1e1e1e; margin: 0; ">
+    <div class="content-box-left" style="min-width: 70px;width: 70px; text-align: center; position: relative; margin: 0;">
+        <a href="/forum/user/7" class="box-user" data-id="1">
+            <div class="box-avatar" style="
+    border-radius: 0!important;
+    background-size: 50px;
+    background-color: transparent;
+    background-image: url(https://cdn.discordapp.com/avatars/1192437285673783456/a_6c33b917e14d961e1b2f487202ae9270.webp), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==)
+">
+            </div>
+        </a>
+    </div>
+    <div class="content-box-middle" style="color:var(--white);">
+        <a style="text-decoration: none;" href="/forum/shitposting">
+            <h2 class="post-title post-title-interactable" style="margin-top: 8px;padding-left: 4px;font-size:18px!important;font-family:gotham">Shitposting Obscura Lua</h2>
+        </a>
+        <span style="margin-right: 12px;">shitbag dumbass tries pulling dmca threat, gets bullied out of ScriptBlox</span>
+            <span class="reply-note tooltip-date">Last Reply 23 Days</span>
+        <div class="flare-box" style="padding: 0 0 5px 0;">
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small title-small-2" style="margin: 0;">27 Threads</h3>
+        <h3 class="title-small title-small-2" style="margin: 0;">38 Replies</h3>
+    </div>
+</div>
+
+                
+
+
+<div class="content-box-mini  content-box-interactable2" style="font-family:gotham!important; min-height: 80px!important;height:80px!important; border-bottom: 2px dashed #1e1e1e; margin: 0; ">
+    <div class="content-box-left" style="min-width: 70px;width: 70px; text-align: center; position: relative; margin: 0;">
+        <a href="/forum/user/7" class="box-user" data-id="1">
+            <div class="box-avatar" style="
+    border-radius: 0!important;
+    background-size: 50px;
+    background-color: transparent;
+    background-image: url(../avatars/792875215243575306/d65f9f38a43a4afefcd4566db61e57c7.webp), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==)
+">
+            </div>
+        </a>
+    </div>
+    <div class="content-box-middle" style="color:var(--white);">
+        <a style="text-decoration: none;" href="/forum/scriptsharing">
+            <h2 class="post-title post-title-interactable" style="margin-top: 8px;padding-left: 4px;font-size:18px!important;font-family:gotham">Script Sharing</h2>
+        </a>
+        <span style="margin-right: 12px;">test script new</span>
+            <span class="reply-note tooltip-date">Last Reply 1 Month</span>
+        <div class="flare-box" style="padding: 0 0 5px 0;">
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small title-small-2" style="margin: 0;">7 Threads</h3>
+        <h3 class="title-small title-small-2" style="margin: 0;">13 Replies</h3>
+    </div>
+</div>
+
+
+                <div class="content-box-header content-box-interactable2">
+                    <h3>Platforms</h3>
+                </div>
+
+                
+
+
+<div class="content-box-mini  content-box-interactable2" style="font-family:gotham!important; min-height: 80px!important;height:80px!important; border-bottom: 2px dashed #1e1e1e; margin: 0; ">
+    <div class="content-box-left" style="min-width: 70px;width: 70px; text-align: center; position: relative; margin: 0;">
+        <a href="/forum/user/7" class="box-user" data-id="1">
+            <div class="box-avatar" style="
+    border-radius: 0!important;
+    background-size: 50px;
+    background-color: transparent;
+    background-image: url(https://cdn.discordapp.com/avatars/992477892678262795/ac6d74eb1d637a98276cc05814db6edc.webp), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==)
+">
+            </div>
+        </a>
+    </div>
+    <div class="content-box-middle" style="color:var(--white);">
+        <a style="text-decoration: none;" href="/forum/roblox">
+            <h2 class="post-title post-title-interactable" style="margin-top: 8px;padding-left: 4px;font-size:18px!important;font-family:gotham">Roblox</h2>
+        </a>
+        <span style="margin-right: 12px;">Certian Obfuscations arent SAFE</span>
+            <span class="reply-note tooltip-date">Last Reply 8 Days</span>
+        <div class="flare-box" style="padding: 0 0 5px 0;">
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small title-small-2" style="margin: 0;">2 Threads</h3>
+        <h3 class="title-small title-small-2" style="margin: 0;">12 Replies</h3>
+    </div>
+</div>
+
+                
+
+
+<div class="content-box-mini  content-box-interactable2" style="font-family:gotham!important; min-height: 80px!important;height:80px!important; border-bottom: 2px dashed #1e1e1e; margin: 0; ">
+    <div class="content-box-left" style="min-width: 70px;width: 70px; text-align: center; position: relative; margin: 0;">
+        <a href="/forum/user/7" class="box-user" data-id="1">
+            <div class="box-avatar" style="
+    border-radius: 0!important;
+    background-size: 50px;
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==)
+">
+            </div>
+        </a>
+    </div>
+    <div class="content-box-middle" style="color:var(--white);">
+        <a style="text-decoration: none;" href="/forum/fivem">
+            <h2 class="post-title post-title-interactable" style="margin-top: 8px;padding-left: 4px;font-size:18px!important;font-family:gotham">FiveM</h2>
+        </a>
+        <span style="margin-right: 12px;"></span>
+        <div class="flare-box" style="padding: 0 0 5px 0;">
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small title-small-2" style="margin: 0;">0 Threads</h3>
+        <h3 class="title-small title-small-2" style="margin: 0;">0 Replies</h3>
+    </div>
+</div>
+
+                
+
+
+<div class="content-box-mini  content-box-interactable2" style="font-family:gotham!important; min-height: 80px!important;height:80px!important; border-bottom: 2px dashed #1e1e1e; margin: 0; ">
+    <div class="content-box-left" style="min-width: 70px;width: 70px; text-align: center; position: relative; margin: 0;">
+        <a href="/forum/user/7" class="box-user" data-id="1">
+            <div class="box-avatar" style="
+    border-radius: 0!important;
+    background-size: 50px;
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==)
+">
+            </div>
+        </a>
+    </div>
+    <div class="content-box-middle" style="color:var(--white);">
+        <a style="text-decoration: none;" href="/forum/wow">
+            <h2 class="post-title post-title-interactable" style="margin-top: 8px;padding-left: 4px;font-size:18px!important;font-family:gotham">World of Warcraft</h2>
+        </a>
+        <span style="margin-right: 12px;"></span>
+        <div class="flare-box" style="padding: 0 0 5px 0;">
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small title-small-2" style="margin: 0;">0 Threads</h3>
+        <h3 class="title-small title-small-2" style="margin: 0;">0 Replies</h3>
+    </div>
+</div>
+
+                
+
+
+<div class="content-box-mini  content-box-interactable2" style="font-family:gotham!important; min-height: 80px!important;height:80px!important; border-bottom: 2px dashed #1e1e1e; margin: 0; ">
+    <div class="content-box-left" style="min-width: 70px;width: 70px; text-align: center; position: relative; margin: 0;">
+        <a href="/forum/user/7" class="box-user" data-id="1">
+            <div class="box-avatar" style="
+    border-radius: 0!important;
+    background-size: 50px;
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAARtSURBVGhD7ZjLaxNRFIdPmjQm2li1mrbW+qjamEyePiiCxQc+ca8ogujehSAi+A+4cCG41pUgLly5EXfiRhHR1KapVXzbSl1YbXxAU+M5Z+6dzKTNe5IMJR9MzjQzmZlvfvfMHbVlMhlYSLSIumBoClmdppDVaehTLrJjQDt5/OkTm1itioYJkUwoqIi/AF4OJ7hWK1Z3IRSJYnmul9FTrVhdheQQyyejp1KxugnlDrFSKVes5kLlpFKIUsVqKlRpKoUoJlYTIbNSKUQ+MdOFapFKIXLFTBNCkRksjnrK6CExkjLl1Uek0lAZSVVCJFLvIZYLyWyN0lytUrGQFGlkKiwTi4hvVMoWskoqMUwlFo3A9lhYfKtSlpBVUonyEMtAf99aSM/MwMH9g6AEfLxPSU85EqHa6FSiUUrDBpvXrwGPxwMu1yLe1up0gtvtghPHTxV/ylkllVhElbFhMm/efYbFSxaDo9WhyUjyJmSZVMIoglNm9nXABs/jcV67dOEcftJlqlvzJtToVMYnvrJMhFMBOLBvEA4d2I2Xrsl0Z195sqqEISGrpNLp9UJ3Vxds7uvlXnG02sFhd8DS9qWcgtgVbt+5dRbLDVqX32sJkcxqPEijZCYnJ9VUwiHo6uzCyTKgNT7JUK/kghI3sWygdZTroWoYcuNf1ajrDZ0zPTsLkVAIW0IN4NmLBDyLj3AqbZ42Q+Pn8FHUy/RhEFL8fvD7fHWVonOFQ0FY0403mPv7HzUCxIde4jJEu7xqacn/MMaU8AfMRfqYsyf9mMR+/frNJ5v+OS22mAsdW5UJgW/jOtgWU2DnQBSOHNzLMohHNP52+qME7tGHXuiMqIzb5WKxz1++mJ4YHS8UDEIYl20R6pU27hWZBIngkqJ1TICr4JOoc8D99lLVC10X1YCvv5/F3r//ULWYTIVkiN2DA7DKuxK8nV5u+vkan5BPMKRXVAO67VkhvCOeRDIJtMzH2t5eFvs2+a0iMVVEzm3ULBl4+Ogx3H/wEK5cvc5NX6DxS8bQQ2LMLs8nRXR0dLCYvNvFkPsFFQX27BrAHtkjtgAM4fdDw8PaP5/NwCBE4MGn6AQodYbE/vz9K7YYISklsAWSydG8YqpIgGVC/k38oElNp+Do4X28jc5jpgxR9G0bJ9w/WFwkMD/q9SSSI1xpSElBBWWU/j4cSm5wUo+Il0mnsxVOnTw9RwQnR74YfU+Uy5yEcsE76BaJnafEvk9NiS0CnDOoHzgxfyArEwhwTYy9xQkyAR0rV2hvxna7nS7+GO9gMkWFJCh1jcTGJyZekNgszuwMT4Yy5Qwsa2/XZAjaNPpqTGt8HXdFNZWShSQoFSOx0bExfiJ+/IRTA76uZOjKcaD09NArlRDEMjwyAul0ejn9Rv1SBYeVuCPmUraQhC6QlulUisWmvv9QPbgnbZBAEVrEfjnjtCCvRa0IM/+j0XCg3EQkZjR+IUwTKpVaC1U85KzKghOq+5CrNc0hZ3WaQlanKWR1FpgQwH9UmCUYiRjgsgAAAABJRU5ErkJggg==)
+">
+            </div>
+        </a>
+    </div>
+    <div class="content-box-middle" style="color:var(--white);">
+        <a style="text-decoration: none;" href="/forum/osrs">
+            <h2 class="post-title post-title-interactable" style="margin-top: 8px;padding-left: 4px;font-size:18px!important;font-family:gotham">OSRS</h2>
+        </a>
+        <span style="margin-right: 12px;"></span>
+        <div class="flare-box" style="padding: 0 0 5px 0;">
+        </div>
+    </div>
+    <div class="content-box-right">
+        <h3 class="title-small title-small-2" style="margin: 0;">0 Threads</h3>
+        <h3 class="title-small title-small-2" style="margin: 0;">0 Replies</h3>
+    </div>
+</div>
+
+
+                <!-- SUMMARY END -->
+
+            </div>
+            <footer class="home-footer" style="
+height: auto;
+">
+                <div style="opacity: 0.2; height:120px; display: flex;
+align-content: flex-end;
+align-items: flex-end;">
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</div>
+
+
+    </div>
+
+    <script defer="" src="../js/luaEngine.js"></script>
+    <script defer="" src="../js/index.js"></script>
+    
+    <script>
+        var maincontainer = document.getElementsByClassName('main-container')[0];
+        var notepadbody = document.getElementsByClassName('notepad-body')[0];
+        const observer = new MutationObserver(function (mutations, observer) {
+            maincontainer.style.height = "100%";
+            if (notepadbody != null)
+                notepadbody.style.height = "100%";
+        });
+        observer.observe(maincontainer, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
+    </script>
+
+</body></html>
